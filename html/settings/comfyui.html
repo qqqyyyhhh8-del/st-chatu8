@@ -149,6 +149,17 @@
                 <button id="testComfyui" class="st-chatu8-btn">连接刷新数据</button>
             </div>
         </div>
+        <div class="st-chatu8-field">
+            <label for="comfyuiBasicAuthUsername">登录用户名</label>
+            <input type="text" id="comfyuiBasicAuthUsername" class="st-chatu8-text-input" autocomplete="username" placeholder="用于 Nginx Basic Auth">
+        </div>
+        <div class="st-chatu8-field">
+            <label for="comfyuiBasicAuthPassword">登录密码</label>
+            <input type="password" id="comfyuiBasicAuthPassword" class="st-chatu8-text-input" autocomplete="current-password" placeholder="留空则不启用账号密码登录">
+            <small style="display: block; margin-top: 8px; color: #888; font-size: 0.85em;">
+                仅用于向 ComfyUI 请求附带 Basic Authorization，适配 Nginx 账号密码保护。
+            </small>
+        </div>
     </div>
     <div class="st-chatu8-settings-section">
         <h4>其他设置</h4>
