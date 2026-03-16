@@ -70,6 +70,7 @@ function installComfyuiBasicAuthFetchPatch(){
                     extraHeaders.forEach((value,key)=>headers.set(key,value));
                 }
 
+                headers.delete('X-CSRF-Token');
                 headers.set('Authorization',`Basic ${encodeBasicAuthValue(`${username}:${password}`)}`);
 
                 if(input instanceof Request){
